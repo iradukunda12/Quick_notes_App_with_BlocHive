@@ -76,3 +76,5 @@ linux/runner/Debug/
 .DS_Store
 *.log
 *.iml
+
+.env
