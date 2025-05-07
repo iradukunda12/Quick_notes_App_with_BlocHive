@@ -7,11 +7,11 @@ class NoteCard extends StatefulWidget {
   final Function(String) onEdit;
 
   const NoteCard({
-    Key? key,
+    super.key,
     required this.note,
     required this.onDelete,
     required this.onEdit,
-  }) : super(key: key);
+  });
 
   @override
   State<NoteCard> createState() => _NoteCardState();
@@ -61,8 +61,7 @@ class _NoteCardState extends State<NoteCard> {
                       fontSize: 16,
                     ),
                   ),
-            const SizedBox(height: 10),
-            // Timestamp and actions
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
